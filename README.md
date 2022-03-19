@@ -59,11 +59,9 @@
 如果有其他需求可以發issue!
 
 ### 主題顏色：
-目前只有兩種：
 
-- default
-
-- tokyonight
+目前有18種主題：
+[目前有的主題配色](https://github.com/jason810496/Zerojudge-stats/tree/master/theme)
 ### 錯誤警示：
 錯誤ID：
 
