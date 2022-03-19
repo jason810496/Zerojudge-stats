@@ -1,0 +1,49 @@
+<svg height="250px" width="400px" xmlns="http://www.w3.org/2000/svg">
+	
+	<style>
+		
+		:root{
+			--bg : {{Theme['bg']}};
+			--title : {{Theme['title']}};
+			--text : {{Theme['text']}};
+			--icon : {{Theme['icon']}};
+		}
+		td {
+			font-size: 1.3em;
+			font-weight:bold;
+			padding-right:2em;
+			color : var(--text);
+			
+			font-family: DejaVu Sans Mono, monospace;
+		}
+		
+		.total{
+			font-family:  DejaVu Sans Mono, monospace;
+		}
+		.bar{
+			background-color:var(--title);
+		}
+		.num{
+			font-weight: normal;
+		}
+		
+		.stats-title{
+			color:var(--icon);
+		}
+		
+		
+	</style>
+	
+	<rect height="100%" width="100%" fill="var(--bg)" opacity="1" rx="8px" />
+	
+	<text text-anchor="middle" >
+		<tspan x="50%" y="20%" font-size="1.7em" font-weight="bold" fill="var(--title)" >User not found!</tspan>
+		<tspan x="50%" y="50%" font-size="1.7em" font-weight="bold" fill="var(--icon)" >( ˘•ω•˘ )</tspan>
+		<tspan x="25%" y="71%" font-size="0.9em" font-weight="middle" fill="var(--text)"  text-anchor="start" >Please check whether the </tspan>
+		<tspan x="25%" y="79%" font-size="0.9em" font-weight="middle" fill="var(--text)"  text-anchor="start" >id of your Zerojudge </tspan>
+		<tspan x="25%" y="87%" font-size="0.9em" font-weight="middle" fill="var(--text)"  text-anchor="start" > account is correct !</tspan>
+	</text>
+
+	
+	
+</svg>

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Admin Page{% endblock %}
+{% block header %}
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Admin</span>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+
+  <div class="w-75 h-50 bg-light position-absolute top-50 start-50 translate-middle " >
+    <form method="post">
+      
+      <div class="input-group mb-3 p-5">
+        <input name="cookie" type="text" class="form-control" placeholder="New CookieID" >
+        <button name="change" value="Change" class="btn btn-outline-secondary" type="submit" >Submit</button>
+      </div>
+  
+      <div class="col-auto"> 
+        <button name="check" value="Check" type="submit" class="btn btn-secondary mb-3 position-absolute top-50 start-50 translate-middle">Check</button>
+      </div>
+      
+    </form>
+
+
+  </div>
+
+  
+  
+   {{result}}
+{% endblock %}
+
+
