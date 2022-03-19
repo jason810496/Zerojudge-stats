@@ -19,7 +19,7 @@
 
 現在的結果：(根據現在server的狀態有所不同，而以下其他的圖片則是事先截圖好的)
 
-[![Zerojudge Stats](https://zj-query-0.herokuapp.com/user?user_id=122857&name=Jason)](https://github.com/jason810496/Zerojudge-stats)
+[![Zerojudge Stats](https://zj-query-0.herokuapp.com/user?user_id=122857&name=Jason&theme=onedark)](https://github.com/jason810496/Zerojudge-stats)
 
 **如何知道自己帳號的ID ?**
 
