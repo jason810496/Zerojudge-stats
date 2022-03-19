@@ -1,0 +1,6 @@
+Flask==2.0.3
+Flask-Login==0.5.0
+bs4
+APScheduler==3.0.0
+gunicorn
+requests
