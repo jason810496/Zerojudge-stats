@@ -1,0 +1,163 @@
+{
+	"default":{
+		"bg" : "white" ,
+		"text" : "rgb(140, 131, 129)",
+		"icon" : "rgb(56, 54, 53)",
+		"title": "rgb(7, 85, 168)"
+	
+	},
+	
+	"tokyonight":{
+	
+		"bg" : "#1a1b27" ,
+		"text" : "rgb(56,175,163)",
+		"icon" : "rgba(112,165,253,255)",
+		"title": "rgba(191,145,243,255)"
+		
+	},
+	
+	"merko":{
+	
+		"bg" : "rgba(8,16,11,255)" ,
+		"text" : "rgba(37,130,92,255)",
+		"icon" : "rgba(85,143,10,255)",
+		"title": "rgba(141,232,17,255)"
+		
+	},
+	
+	"onedark":{
+	
+		"bg" : "#282a34" ,
+		"text" : "#cb5064",
+		"icon" : "#6fb26d",
+		"title": "#e7c777"
+		
+	},
+	
+	"prussian":{
+	
+		"bg" : "#162a45" ,
+		"text" : "#5a79a0",
+		"icon" : "#3e85ff",
+		"title": "#b0d1f6"
+		
+	},
+	
+	"dracula":{
+	
+		"bg" : "#292736" ,
+		"text" : "#d9dad6",
+		"icon" : "#59d6fa",
+		"title": "#ff3f8d"
+		
+	},
+	
+	"vue":{
+	
+		"bg" : "#fffefe" ,
+		"text" : "#334154",
+		"icon" : "#00c989",
+		"title": "#00c888"
+		
+	},
+	
+	"vue-dark":{
+	
+		"bg" : "#263549" ,
+		"text" : "#f2f2f3",
+		"icon" : "#00906e",
+		"title": "#00c786"
+		
+	},
+	
+	"shades-of-purple":{
+	
+		"bg" : "#351855" ,
+		"text" : "#875bb6",
+		"icon" : "#d200fe",
+		"title": "#fadf00"
+		
+	},
+	
+	"nord":{
+	
+		"bg" : "#2e3140" ,
+		"text" : "#b1b5c3",
+		"icon" : "#72b4c4",
+		"title": "#7e9bc2"
+		
+	},
+	
+	"gotham":{
+	
+		"bg" : "#0c0f14" ,
+		"text" : "#67a3a0",
+		"icon" : "#429dac",
+		"title": "#00b48c"
+		
+	},
+	
+	"material-palenight":{
+	
+		"bg" : "#2b293e" ,
+		"text" : "#8782a6",
+		"icon" : "#73daff",
+		"title": "#db6be9"
+		
+	},
+	
+	"react":{
+	
+		"bg" : "#20222a" ,
+		"text" : "#e6e7e8",
+		"icon" : "#2992ab",
+		"title": "#1fd9fd"
+		
+	},
+	
+	"blueberry":{
+	
+		"bg" : "#252538" ,
+		"text" : "#00efa5",
+		"icon" : "#73daff",
+		"title": "#8b92ff"
+		
+	},
+	
+	"blood-dark":{
+	
+		"bg" : "#0f2937" ,
+		"text" : "#e1e5e6",
+		"icon" : "#226b8d",
+		"title": "#ff3652"
+		
+	},
+	
+	"blood":{
+	
+		"bg" : "#ffffff" ,
+		"text" : "#707a87",
+		"icon" : "#266f92",
+		"title": "#ff3853"
+		
+	},
+	
+	"green_nur":{
+	
+		"bg" : "#002018" ,
+		"text" : "#e9eceb",
+		"icon" : "#00dfa5",
+		"title": "#00ffca"
+		
+	},
+	
+	"blux":{
+	
+		"bg" : "#203c47" ,
+		"text" : "#d9dedf",
+		"icon" : "#00f0fc",
+		"title": "#008597"
+		
+	}
+
+}
