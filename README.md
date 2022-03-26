@@ -6,7 +6,7 @@
 <!-- ![](https://i.imgur.com/FXJaYDb.png) -->
 <img src="https://i.imgur.com/FXJaYDb.png" width="500" height="350" />
 
-目前是Beta版本，會再進行調整、完善界面跟主題。
+目前是**Beta版本**，會再進行調整、完善界面跟主題。
 ### 使用方法：
 
 ```
@@ -60,7 +60,7 @@
 
 ### 主題顏色：
 
-目前有18種主題：
+目前有**18種**主題：
 [目前有的主題配色](https://github.com/jason810496/Zerojudge-stats/tree/master/theme)
 ### 錯誤警示：
 錯誤ID：
@@ -79,7 +79,7 @@ Server錯誤：
 ### 有關延遲＆一直都是Server錯誤：
 - **延遲**
 
-目前的server是部屬在Heroku(他們的主機在美國)，也就是要在網站顯示資料必須來回傳送4次，也要根據當前的網路狀況，所以有所延遲。
+目前的server是部屬在Heroku(他們的主機在美國)，也就是要在網站顯示資料必須**來回傳送4次**，也要根據當前的網路狀況，所以有所延遲。
 
 `瀏覽者`→ `my server`→ `Zerojudge`→ `my server` →`瀏覽者`
 
@@ -89,13 +89,13 @@ Server錯誤：
 
 如果一直都是Server Error，可以登入到Zerojudge看看。如果也連不到Zerojudge，那代表有可能Zerojudge暫時下線、維修等。
 
-如果連的到Zerojudge，那代表應該是我這邊的問題，需要我這邊重新登錄(原因可以看下方實做細節的[連結]())，可以直接通知我！
+如果連的到Zerojudge，那代表應該是我這邊的問題，需要我這邊重新登錄(原因可以看下方實做細節的[連結](https://jason810496.github.io/blog/2022-03-24-ZJstats0/))，可以直接通知我！
 
 
 ### 實做細節：
 
 施工中：
-發布於[My blog](My blog link)
+發布於[My blog](https://jason810496.github.io/blog/2022-03-24-ZJstats0/)
 
 ### 參考資料：
 
