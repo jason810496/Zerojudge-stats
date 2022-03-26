@@ -94,7 +94,6 @@ Server錯誤：
 
 ### 實做細節：
 
-施工中：
 發布於[My blog](https://jason810496.github.io/blog/2022-03-24-ZJstats0/)
 
 ### 參考資料：
