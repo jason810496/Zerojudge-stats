@@ -91,6 +91,12 @@ Server錯誤：
 
 如果連的到Zerojudge，那代表應該是我這邊的問題，需要我這邊重新登錄(原因可以看下方實做細節的[連結](https://jason810496.github.io/blog/2022-03-24-ZJstats0/))，可以直接通知我！
 
+### 改善記錄：
+
+- 2022/4/4 **Google app script Clock**
+
+透過Google app script 叫醒Heroku的app（因為不確定threaded + clock.py 到底有沒有把app叫醒，而我在Google app script是fetch function每10分鐘向app發出請求。一方面是叫醒Heroku，另一方面是保持專門查詢帳號active )
+
 
 ### 實做細節：
 
