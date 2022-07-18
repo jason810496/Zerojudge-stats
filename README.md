@@ -4,7 +4,7 @@
 
 可以在Github Profile顯示當前Zerojudge的解題紀錄！
 <!-- ![](https://i.imgur.com/FXJaYDb.png) -->
-<img src="https://i.imgur.com/FXJaYDb.png" width="500" height="350" />
+<img src="https://i.imgur.com/erhafXE.png" width="500"  />
 
 目前是**1.0版本**，主要的問題已解決，可能還會針對細節做微調。
 ### 使用方法：
@@ -41,7 +41,7 @@
 
 成功的結果：
 
-![success](https://i.imgur.com/dn4aFHP.png)
+<img src="https://i.imgur.com/6w10LT2.png" width="250"  alt="success"/>
 
 ### 參數：
 | 參數      | 功能               | 預設 |
