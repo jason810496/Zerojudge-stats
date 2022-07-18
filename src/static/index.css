@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif; 
+}
+.text-center{
+    text-align: center;
+}
+
+.socil-links a{
+    font-size: 40px;
+}
+
+.socil-links{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.Tool{
+    position: absolute;
+    width: 15%;
+    height: 40%;
+    left: 5%;
+    top: 20%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+.Tool-text{
+    margin-top: 50px;
+    font-size: larger;
+    background-color: #fff;
+    /* background-color: inherit; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    width: 50%;
+    margin-left: 25%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif; 
+}
+
+.Main{
+    width: 50%;
+    transform: translateX(50%) translateY(10%);
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.Title{
+    padding-top: 50px;
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.Description{
+    font-size: large;
+    margin: 20px;
+}
+
+.demo-image{
+    transform: translateX(25%);
+}
+
+
+pre code {
+    background-color: rgb(49, 47, 47);
+    color: rgb(212, 212, 212);
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    text-align: left;
+}
+.markdown-copy{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.markdown-copy p{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    right: 30px;
+    transform: translateY(-140%) translateX(12%);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif; 
+}
+
+select{
+    background-color: rgb(255, 255, 255);
+    font-size: large;
+    transform:translateX(50%);
+    text-align: center;
+    width: 50%;
+    
+}
+
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }

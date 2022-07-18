@@ -1,131 +1,113 @@
-<svg height="250px" width="400px" xmlns="http://www.w3.org/2000/svg">
+<svg height="200px" width="400px" xmlns="http://www.w3.org/2000/svg">
 	
-	<!-- transition: <property> <duration> <timing-function> <delay>; -->
-	<style>
-		
-		:root{
-			--bg : {{Theme['bg']}};
-			--title : {{Theme['title']}};
-			--text : {{Theme['text']}};
-			--icon : {{Theme['icon']}};
-		}
-		td {
-			font-size: 1.3em;
-			font-weight:bold;
-			padding-right:2em;
-			color : var(--text);
-			
-			font-family: DejaVu Sans Mono, monospace;
-		}
-		
-		.total{
-			font-family:  DejaVu Sans Mono, monospace;
-		}
-		.bar{
-			background-color:var(--title);
-		}
-		.num{
-			font-weight: normal;
-		}
-		
-		.stats-title{
-			color:var(--icon);
-		}
-		.User{
-			color:var(--title);
-			background-color:(--bg);
-			
-			font-size:1.5em ;
-			font-weight:bold;
-			display:block;
-			word-wrap:break-word; 
-		}
-		
-		
-		/*
-		#AC{
-			color:var(--AC-color);
-		}
-		
-		#WA{
-			color:var(--WA-color);
-		}
-		
-		#TLE{
-			color:var(--TLE-color);
-		}
-		*/
-		
-		
-	</style>
-	
-	<rect height="100%" width="100%" fill="var(--bg)" opacity="1" rx="8px" />
-	<text fill="var(--title)" font-size="1.5em" font-weight="bold">
-		<tspan x="70%" y="20%">Stats</tspan>
-	</text>
-
-	<!-- eng : 8 char ,  Zh : 5 word -->
-	<foreignObject x="6%" y="10%" width="30%" height="27%">
-	<div xmlns="http://www.w3.org/1999/xhtml" class="User">{{User}}</div>
-	</foreignObject>
-
-	<!-- zerojudge icon start-->
-	
-	
-<svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" x="150px" y="0%">
-
-	<rect height="100%" width="100%" fill="var(--bg)" />
-		
-		<circle cx="50%" cy="45%" r="40%" fill-opacity="0" style="stroke:var(--icon); stroke-width:5%; " />
-		
-		<text x="20%" y="47%" fill="var(--text)" font-size="1.3em" font-weight="bold">ZERO</text>
-		
-		<text x="26%" y="65%" fill="var(--text)" font-size="1em" font-weight="normal" >JUDGE</text>
-		
-		
-		<line x1="5%" y1="10%" x2="95%" y2="10%" style="stroke:var(--bg); stroke-width:30%; "/>
-		
-		<line x1="5%" y1="20%" x2="95%" y2="20%" style="stroke:var(--icon); stroke-width:10%; "/>
-		
-		<line x1="5%" y1="25%" x2="95%" y2="25%" style="stroke:var(--bg); stroke-width:5%; "/>
-</svg>
-
-	<!-- Data table start-->
-	
-	<foreignObject x="22%" y="40%" width="318" height="168">
-	<div xmlns="http://www.w3.org/1999/xhtml">
-
-	<table >
-	  <tr >
-		<td class="stats-title" id="AC" >AC</td>
-		<td class="num">{{AC_TIME}}</td>
-		<td>Times</td>
-	  </tr>
-	  <tr>
-		<td class="stats-title" id="WA">WA</td>
-		<td class="num">{{WA_TIME}}</td>
-		<td>Times</td>
-	  </tr>
-	  <tr>
-		<td class="stats-title" id="TLE">TLE</td>
-		<td class="num">{{TLE_TIME}}</td>
-		<td>Times</td>
-	  </tr>
-	</table>
-	
-	</div>
-	</foreignObject>
-	
-	<!-- Progress bar start-->
-	<rect ill="white" x="25%" y="85%" width="50%" height="5%" rx="8px" opacity="1"/>
-	
-	<rect fill="var(--title)" x="25%" y="85%" width="50%" height="5%" rx="8px" opacity="0.6"/>
-	
-	<rect class="progress" fill="var(--title)" x="25%" y="85%" width="{{Total/2}}%" height="5%" rx="8px" opacity="1"/>
-	
-	<text class="total" fill="var(--icon)" font-size="1.4em" font-weight="normal" >
-		<tspan x="5%" y="90%" >total</tspan>
-		<tspan x="80%" y="90%">{{Total}}%</tspan>
-	</text>
-	
-</svg>
+        <!-- transition: <property> <duration> <timing-function> <delay>; -->
+        <style>
+          
+          :root{
+            --bg : {{Theme['bg']}};
+            --title : {{Theme['title']}};
+            --text : {{Theme['text']}};
+            --icon : {{Theme['icon']}};
+          }
+          td {
+            font-size: 1.3em;
+            font-weight:bold;
+            padding-left:1.5em;
+            color : var(--text);
+            font-family: DejaVu Sans Mono, monospace;
+          }
+          
+          .total{
+            font-family:  DejaVu Sans Mono, monospace;
+          }
+          .bar{
+            background-color:var(--title);
+          }
+          .num{
+            font-weight: normal;
+          }
+          
+          .stats-title{
+            color:var(--icon);
+          }
+          .User{
+            color:var(--title);
+            background-color:(--bg);
+            
+            font-size:1.5em ;
+            font-weight:bold;
+            display:block;
+            word-wrap:break-word; 
+            text-align: center;
+          }
+          
+          
+          /*
+          #AC{
+            color:var(--AC-color);
+          }
+          */
+          
+          
+        </style>
+        
+        <rect height="100%" width="100%" fill="var(--bg)" opacity="1" rx="8px" />
+        <text fill="var(--title)" font-size="1.5em" font-weight="bold">
+          <tspan x="70%" y="20%">Stats</tspan>
+        </text>
+      
+        <!-- eng : 8 char ,  Zh : 5 word -->
+        <foreignObject x="1%" y="10%" width="38%" height="27%">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="User">{{User}}</div>
+        </foreignObject>
+      
+        <!-- zerojudge icon start-->
+        
+        
+      <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" x="150px" y="0%">
+      
+        <rect height="100%" width="100%" fill="var(--bg)" />
+          
+          <circle cx="50%" cy="45%" r="40%" fill-opacity="0" style="stroke:var(--icon); stroke-width:5%; " />
+          
+          <text x="20%" y="47%" fill="var(--text)" font-size="1.3em" font-weight="bold">ZERO</text>
+          
+          <text x="26%" y="65%" fill="var(--text)" font-size="1em" font-weight="normal" >JUDGE</text>
+          
+          
+          <line x1="5%" y1="10%" x2="95%" y2="10%" style="stroke:var(--bg); stroke-width:30%; "/>
+          
+          <line x1="5%" y1="20%" x2="95%" y2="20%" style="stroke:var(--icon); stroke-width:10%; "/>
+          
+          <line x1="5%" y1="25%" x2="95%" y2="25%" style="stroke:var(--bg); stroke-width:5%; "/>
+      </svg>
+      
+        <!-- Data table start-->
+        
+        <foreignObject x="22%" y="54%" width="250" height="50">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+      
+        <table >
+          <tr >
+          <td class="stats-title" id="AC" >AC</td>
+          <td class="num">{{AC_TIME}}</td>
+          <td>Times</td>
+          </tr>
+        </table>
+        
+        </div>
+        </foreignObject>
+        
+        <!-- Progress bar start-->
+        <rect ill="white" x="25%" y="85%" width="50%" height="5%" rx="8px" opacity="1"/>
+        
+        <rect fill="var(--title)" x="25%" y="85%" width="50%" height="5%" rx="8px" opacity="0.6"/>
+        
+        <rect class="progress" fill="var(--title)" x="25%" y="85%" width="{{Total/2}}%" height="5%" rx="8px" opacity="1"/>
+        
+        <text class="total" fill="var(--icon)" font-size="1.4em" font-weight="normal" >
+          <tspan x="5%" y="90%" >total</tspan>
+          <tspan x="80%" y="90%">{{Total}}%</tspan>
+        </text>
+        
+      </svg>

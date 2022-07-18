@@ -40,7 +40,7 @@
 		<tspan x="50%" y="20%" font-size="1.7em" font-weight="bold" fill="var(--title)" >User not found!</tspan>
 		<tspan x="50%" y="50%" font-size="1.7em" font-weight="bold" fill="var(--icon)" >( ˘•ω•˘ )</tspan>
 		<tspan x="25%" y="71%" font-size="0.9em" font-weight="middle" fill="var(--text)"  text-anchor="start" >Please check whether the </tspan>
-		<tspan x="25%" y="79%" font-size="0.9em" font-weight="middle" fill="var(--text)"  text-anchor="start" >id of your Zerojudge </tspan>
+		<tspan x="25%" y="79%" font-size="0.9em" font-weight="middle" fill="var(--text)"  text-anchor="start" >account of your Zerojudge </tspan>
 		<tspan x="25%" y="87%" font-size="0.9em" font-weight="middle" fill="var(--text)"  text-anchor="start" > account is correct !</tspan>
 	</text>
 

@@ -1,20 +1,163 @@
 {% extends 'base.html' %}
 
-{% block header %}
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1 text-center ">Zerojudge Stats</span>
-  </div>
-</nav>
-{% endblock %}
 
 {% block content %}
-  
+    
+  <div class="socil-links text-center">
+    <ul className="social">
+      <li ><a href="https://github.com/jason810496/Zerojudge-stats"><i class="fa fa-github"></i></a></li>
+    </ul>
+  </div>
 
-  <div class="w-75 h-50 shadow p-3 mb-5 bg-body rounded position-absolute top-50 start-50 translate-middle">
+  <div class="Tool">
+    <div class="Tool-text text-center">Theme</div>
+    <form method="GET" action='/' >
+      <select name="theme" onchange="this.form.submit()">
+        {% for key in ThemeDictionary %}
+        <option value="{{ key }}">{{ key }}</option>
+        {% endfor %}
+      </select>
+    </form>
+  </div>
 
-    <h1 class="position-absolute top-30 start-50 translate-middle">Generate your ZJ Stats</h1>
-    <p class="text-start fs-5" style="margin-top: 5%; margin-left: 2%; margin-right: 2%;">在靜態網頁中顯示使用者當前的Zerojudge解題統計！</p>
+  <div class="Main">
+
+    <h1 class="Title text-center">Generate your real-time ZJ Stats</h1>
+    <p class="Description text-center">在靜態網頁中顯示使用者當前的 Zerojudge 解題統計！</p>
+    
+    
+    
+
+    <div class="demo-image">
+      <svg height="200px" width="400px" xmlns="http://www.w3.org/2000/svg">
+	
+        <!-- transition: <property> <duration> <timing-function> <delay>; -->
+        <style>
+          
+          :root{
+            --bg : {{Theme['bg']}};
+            --title : {{Theme['title']}};
+            --text : {{Theme['text']}};
+            --icon : {{Theme['icon']}};
+          }
+          td {
+            font-size: 1.3em;
+            font-weight:bold;
+            padding-left:1.5em;
+            color : var(--text);
+            font-family: DejaVu Sans Mono, monospace;
+          }
+          
+          .total{
+            font-family:  DejaVu Sans Mono, monospace;
+          }
+          .bar{
+            background-color:var(--title);
+          }
+          .num{
+            font-weight: normal;
+          }
+          
+          .stats-title{
+            color:var(--icon);
+          }
+          .User{
+            color:var(--title);
+            background-color:(--bg);
+            
+            font-size:1.5em ;
+            font-weight:bold;
+            display:block;
+            word-wrap:break-word; 
+            text-align: center;
+          }
+          
+          
+          /*
+          #AC{
+            color:var(--AC-color);
+          }
+          */
+          
+          
+        </style>
+        
+        <rect height="100%" width="100%" fill="var(--bg)" opacity="1" rx="8px" />
+        <text fill="var(--title)" font-size="1.5em" font-weight="bold">
+          <tspan x="70%" y="20%">Stats</tspan>
+        </text>
+      
+        <!-- eng : 8 char ,  Zh : 5 word -->
+        <foreignObject x="1%" y="10%" width="38%" height="27%">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="User">{{User}}</div>
+        </foreignObject>
+      
+        <!-- zerojudge icon start-->
+        
+        
+      <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" x="150px" y="0%">
+      
+        <rect height="100%" width="100%" fill="var(--bg)" />
+          
+          <circle cx="50%" cy="45%" r="40%" fill-opacity="0" style="stroke:var(--icon); stroke-width:5%; " />
+          
+          <text x="20%" y="47%" fill="var(--text)" font-size="1.3em" font-weight="bold">ZERO</text>
+          
+          <text x="26%" y="65%" fill="var(--text)" font-size="1em" font-weight="normal" >JUDGE</text>
+          
+          
+          <line x1="5%" y1="10%" x2="95%" y2="10%" style="stroke:var(--bg); stroke-width:30%; "/>
+          
+          <line x1="5%" y1="20%" x2="95%" y2="20%" style="stroke:var(--icon); stroke-width:10%; "/>
+          
+          <line x1="5%" y1="25%" x2="95%" y2="25%" style="stroke:var(--bg); stroke-width:5%; "/>
+      </svg>
+      
+        <!-- Data table start-->
+        
+        <foreignObject x="22%" y="54%" width="250" height="50">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+      
+        <table >
+          <tr >
+          <td class="stats-title" id="AC" >AC</td>
+          <td class="num">{{AC_TIME}}</td>
+          <td>Times</td>
+          </tr>
+        </table>
+        
+        </div>
+        </foreignObject>
+        
+        <!-- Progress bar start-->
+        <rect ill="white" x="25%" y="85%" width="50%" height="5%" rx="8px" opacity="1"/>
+        
+        <rect fill="var(--title)" x="25%" y="85%" width="50%" height="5%" rx="8px" opacity="0.6"/>
+        
+        <rect class="progress" fill="var(--title)" x="25%" y="85%" width="{{Total/2}}%" height="5%" rx="8px" opacity="1"/>
+        
+        <text class="total" fill="var(--icon)" font-size="1.4em" font-weight="normal" >
+          <tspan x="5%" y="90%" >total</tspan>
+          <tspan x="80%" y="90%">{{Total}}%</tspan>
+        </text>
+        
+      </svg>
+    
+      <script>
+        function copy(){
+          var copyText = document.getElementsByTagName('code');
+          navigator.clipboard.writeText(copyText[0].innerText);
+
+          console.log( copyText[0].innerText );
+          console.log('click');
+        }
+      </script>
+    
+    </div>
+    <div class="markdown-copy" onclick="copy()">
+      <pre><code>![Zerojudge status](https://zj-query-0.herokuapp.com/user?name=User&account=xxx&theme={{themeName}})</code></pre>
+      <p>click to copy</p>
+    </div>
   </div>
 {% endblock %}
 
